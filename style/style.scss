@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+//リセット用CSS
+@use "setting/reset";
+
+// 色などの変数読み込み
+@use "setting/variables" as var;
+
+//全体用CSS
+@use "common/common";
+
+//共通用CSS
+@use "common/utility";
+
+// コンポーネント用CSS
+@use "./components/header";
+@use "./components/footer";
+@use "./components/sidebar";
+
+//各ページ用CSS
+@use "./pages/home";
+@use "./pages/post";
+
+//ページネーション
+.navigation {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.page-numbers {
+  font-size: 2rem;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/*******************************
+| (searchform.php)
+*******************************/
+.searchform {
+  font-size: 81%;
+  position: relative;
+  width: 150px;
+  height: auto;
+}
+.searchform__inputText {
+  height: 22px;
+  width: 150px;
+  padding: 0 55px 0 10px;
+  border: 1px solid #333333;
+  position: absolute;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 11px;
+}
+.searchform__submitButton {
+  position: absolute;
+  right: 0;
+  // width: 50px;
+  width: 60px;
+  height: 22px;
+  color: var.$ColorWhite1;
+  line-height: 22px;
+  background-color: var.$ColorBlue1;
+  border-radius: 0px 11px 11px 0px / 0px 11px 11px 0px;
+  cursor: pointer;
+}
+
+/*******************************
+| content(content.php)
+*******************************/
+.content__wrap {
+  background-color: var.$ColorWhite1;
+  // padding-left: 20px;
+  // padding-right: 20px;
+}
+
+.content__DateAndTitleText {
+  padding-top: 20px;
+  font-weight: bold;
+  font-family: var.$font-family1;
+}
+
+.content__heading {
+  padding-top: 20px;
+  // font-weight: bold;
+  // font-family: var.$font-family1;
+}
+
+/*******************************
+| single(single.php)
+*******************************/
+.single__container {
+  justify-content: center;
+}
+
+.single {
+  margin-left: auto;
+  margin-right: auto;
+}

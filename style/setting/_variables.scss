@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+/* ブレイクポイント============================== */
+
+$breakpoints: (
+  "x-sp": "screen and (max-width: 360px)",
+  "sp": "screen and (max-width: 480px)",
+  "x-tab": "screen and (max-width: 600px)",
+  "tab": "screen and (max-width: 768px)",
+  "l-tab": "screen and (max-width: 950px)",
+  "pc": "screen and (max-width: 1025px)",
+  "l-pc": "screen and (max-width: 1280px)",
+  "xl-pc": "screen and (max-width: 1500px)",
+  "xxl-pc": "screen and (max-width: 1800px)",
+) !default;
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+//カラー
+$ColorMain: #e6adb7;
+$ColorSub: #8cfae6;
+$ColorBlue1: #1a73e8;
+$ColorBlue2: #1a63a7;
+$ColorRed1: red;
+$ColorBlack1: #333333;
+$ColorBlack2: rgba(51, 51, 51, 0.9);
+$ColorWhite1: #ffffff;
+$ColorWhite2: #f9f9f9;
+$ColorGray1: #808080;
+$ColorGray2: #bebebe;
+
+//フォントファミリー
+$font-family1: Yu Gothic, Meiryo, MS PGothic, Noto Sans JP, sans-serif;
+$font-family2: Helvetica, Yu Gothic, Meiryo, MS PGothic, Noto Sans JP,
+  sans-serif;
+
+/* フォントサイズ============================== */
+html {
+  font-size: 62.5%;
+  /*   @media screen and (max-width:$tab){
+      font-size: 50%;
+    } */
+
+  @include mq(l-pc) {
+    font-size: 52.5%;
+  }
+
+  @include mq(tab) {
+    font-size: 40%;
+  }
+}
+
+@mixin font-size100 {
+  font-size: 10rem;
+  @include mq(pc) {
+    font-size: 7rem;
+  }
+  @include mq(tab) {
+    font-size: 5.6rem;
+  }
+  @include mq(sp) {
+    font-size: 4rem;
+  }
+}
+
+@mixin font-size80 {
+  font-size: 8rem;
+  @include mq(pc) {
+    font-size: 6.4rem;
+  }
+  @include mq(tab) {
+    font-size: 5rem;
+  }
+  @include mq(sp) {
+    font-size: 3.6rem;
+  }
+}
+
+@mixin font-size64 {
+  font-size: 6.4rem;
+  @include mq(pc) {
+    font-size: 5rem;
+  }
+  @include mq(tab) {
+    font-size: 4rem;
+  }
+  @include mq(sp) {
+    font-size: 3.2rem;
+  }
+}
+
+@mixin font-size56 {
+  font-size: 5.6rem;
+  @include mq(pc) {
+    font-size: 4.4rem;
+  }
+  @include mq(tab) {
+    font-size: 3.6rem;
+  }
+  @include mq(sp) {
+    font-size: 3rem;
+  }
+}
+
+@mixin font-size46 {
+  font-size: 4.6rem;
+  @include mq(pc) {
+    font-size: 3.8rem;
+  }
+  @include mq(tab) {
+    font-size: 3.2rem;
+  }
+  @include mq(sp) {
+    font-size: 2.8rem;
+  }
+}
+
+@mixin font-size40 {
+  font-size: 4rem;
+  @include mq(pc) {
+    font-size: 3.2rem;
+  }
+  @include mq(tab) {
+    font-size: 2.8rem;
+  }
+  @include mq(sp) {
+    font-size: 2.4rem;
+  }
+}
+
+@mixin font-size36 {
+  font-size: 3.6rem;
+  @include mq(pc) {
+    font-size: 3rem;
+  }
+  @include mq(tab) {
+    font-size: 2.8rem;
+  }
+  @include mq(sp) {
+    font-size: 2.4rem;
+  }
+}
+
+@mixin font-size32 {
+  font-size: 3.2rem;
+  @include mq(pc) {
+    font-size: 2.8rem;
+  }
+  @include mq(tab) {
+    font-size: 2.4rem;
+  }
+  @include mq(sp) {
+    font-size: 2rem;
+  }
+}
+
+@mixin font-size30 {
+  font-size: 3rem;
+  @include mq(pc) {
+    font-size: 2.6rem;
+  }
+  @include mq(tab) {
+    font-size: 2.2rem;
+  }
+  @include mq(sp) {
+    font-size: 1.8rem;
+  }
+}
+
+@mixin font-size28 {
+  font-size: 2.8rem;
+  @include mq(pc) {
+    font-size: 2.4rem;
+  }
+  @include mq(tab) {
+    font-size: 2rem;
+  }
+  @include mq(sp) {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin font-size24 {
+  font-size: 2.4rem;
+  @include mq(pc) {
+    font-size: 2rem;
+  }
+  @include mq(tab) {
+    font-size: 1.8rem;
+  }
+  @include mq(sp) {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin font-size22 {
+  font-size: 2.2rem;
+  @include mq(pc) {
+    font-size: 1.8rem;
+  }
+  @include mq(tab) {
+    font-size: 1.6rem;
+  }
+  @include mq(sp) {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin font-size20 {
+  font-size: 2rem;
+  @include mq(pc) {
+    font-size: 1.8rem;
+  }
+  @include mq(tab) {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin font-size18 {
+  font-size: 1.8rem;
+  @include mq(tab) {
+    font-size: 1.6rem;
+  }
+  @include mq(sp) {
+    font-size: 1.4rem;
+  }
+}
+
+@mixin font-size16 {
+  font-size: 1.6rem;
+  @include mq(tab) {
+    font-size: 1.4rem;
+  }
+  @include mq(sp) {
+    font-size: 1.2rem;
+  }
+}
+
+@mixin font-size12 {
+  font-size: 1.2rem;
+  @include mq(tab) {
+    font-size: 1.1rem;
+  }
+  @include mq(sp) {
+    font-size: 1rem;
+  }
+}

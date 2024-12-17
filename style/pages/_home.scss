@@ -1,0 +1,12 @@
+@use "../setting/variables" as var;
+
+/*******************************
+| privateBlog(home.php)
+*******************************/
+
+.privateBlog {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 40px;
+  overflow-wrap: break-word;
+}

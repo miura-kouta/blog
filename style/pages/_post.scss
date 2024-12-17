@@ -1,0 +1,51 @@
+@use "../setting/variables" as var;
+
+/*******************************
+| post(post.php)
+*******************************/
+
+.post__card {
+  min-height: 400px;
+}
+
+.post__linkPic {
+  overflow: hidden;
+  display: block;
+  border-radius: 12px 12px 12px 12px / 12px 12px 12px 12px;
+}
+
+.post__linkPic .attachment-post-thumbnail {
+  aspect-ratio: 8 / 5;
+  object-fit: cover;
+  transition: 0.3s all;
+  overflow: hidden;
+}
+
+.post__card:hover .attachment-post-thumbnail {
+  transform: scale(1.05, 1.05);
+}
+
+.post__linkPic .post__noImage {
+  aspect-ratio: 8 / 5;
+  object-fit: cover;
+  transition: 0.3s all;
+  overflow: hidden;
+}
+
+.post__card:hover .post__noImage {
+  transform: scale(1.05, 1.05);
+}
+
+.post__body {
+  padding: 8px;
+}
+
+.post__heading {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var.$ColorBlue1;
+  font-size: 2rem;
+}

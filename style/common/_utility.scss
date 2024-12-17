@@ -1,0 +1,43 @@
+@use "../setting/variables" as var;
+
+.u-contentWidth {
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  // @include s.mq(l-pc) {
+  //   padding-right: 0;
+  //   padding-left: 0;
+  //   width: 90%;
+  // }
+}
+
+.u-contentFlex {
+  display: flex;
+}
+
+.u-contentPaddingTop {
+  padding-top: 80px;
+}
+
+.u-headingLv1 {
+  font-size: 1.8rem;
+  letter-spacing: 0.341em;
+  color: var.$ColorBlack1;
+  font-weight: bold;
+  font-family: var.$font-family1;
+  line-height: 1.75;
+}
+
+.u-headingLv2 {
+  font-size: 1.8rem;
+  letter-spacing: 0.341em;
+  color: var.$ColorBlack1;
+  font-weight: bold;
+  font-family: var.$font-family1;
+  text-align: center;
+  line-height: 1.75;
+}

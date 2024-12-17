@@ -1,0 +1,46 @@
+@use "../setting/variables" as var;
+
+/*******************************
+| sidebar(sidebar.php)
+*******************************/
+
+.sidebar {
+  //   background-color: #ffdab9;
+  // width: 320px;
+  margin-left: 20px;
+
+  flex-shrink: 1;
+
+  display: block;
+  // width: 100%;
+  // min-width: 320px;
+  // max-width: 320px;
+
+  width: 320px;
+}
+
+.sideBar__categoryTitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sideBar__categoryMenu {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sideBar__tagsTitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.wp-tag-cloud {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.tag-cloud-link {
+  padding-right: 8px;
+}

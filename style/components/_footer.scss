@@ -1,0 +1,12 @@
+@use "../setting/variables" as var;
+
+/*******************************
+| footer(footer.php)
+*******************************/
+
+.footer__textCopyright {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
