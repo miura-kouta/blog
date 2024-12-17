@@ -14,6 +14,7 @@
     endwhile;
   endif;
   ?>
+
   <div class="col-full">
     <div class="wrap-col">
       <div class="related_post">

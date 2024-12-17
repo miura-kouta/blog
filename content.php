@@ -6,16 +6,12 @@
         <div class="entry_body"><?php the_content();?></div> 
       </article>
 
-    <div class="col-full">
-      <div class="wrap-col">
+ 
+  
         <nav class="adjacent_post_links clearfix">
-        <div class="col-1-2">
-        <div class="previous"><p></p><?php previous_post_link('%link', '%title'); ?></div>
-        <div class="col-1-2">
-        <div class="next"><p></p><?php next_post_link('%link', '%title'); ?></div>
-        </div>
+            <div class="previous"><p></p><?php previous_post_link('%link', '%title'); ?></div> 
+            <div class="next"><p></p><?php next_post_link('%link', '%title'); ?></div>
         </nav>
-      </div>
-    </div>
+  
 
 </section>

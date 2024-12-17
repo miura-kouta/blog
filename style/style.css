@@ -578,6 +578,5 @@ ul {
 }
 
 .single {
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 680px;
 }/*# sourceMappingURL=style.css.map */
