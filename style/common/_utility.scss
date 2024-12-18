@@ -1,6 +1,6 @@
 @use "../setting/variables" as var;
 
-.u-contentWidth {
+.u-content {
   width: 100%;
   max-width: 1300px;
   margin-left: auto;
@@ -15,12 +15,13 @@
   // }
 }
 
-.u-contentFlex {
-  display: flex;
+.u-contentPaddingTopBottom {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.u-contentPaddingTop {
-  padding-top: 80px;
+.u-contentFlex {
+  display: flex;
 }
 
 .u-headingLv1 {

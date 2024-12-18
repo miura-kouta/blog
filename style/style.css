@@ -357,7 +357,7 @@ ul {
   list-style: none;
 }
 
-.u-contentWidth {
+.u-content {
   width: 100%;
   max-width: 1300px;
   margin-left: auto;
@@ -366,12 +366,13 @@ ul {
   padding-right: 20px;
 }
 
-.u-contentFlex {
-  display: flex;
+.u-contentPaddingTopBottom {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.u-contentPaddingTop {
-  padding-top: 80px;
+.u-contentFlex {
+  display: flex;
 }
 
 .u-headingLv1 {
@@ -511,7 +512,6 @@ ul {
 .navigation {
   text-align: center;
   padding-top: 40px;
-  padding-bottom: 80px;
 }
 
 .page-numbers {
@@ -558,16 +558,55 @@ ul {
 *******************************/
 .content__wrap {
   background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.content__headingWrap {
+  background-color: #333333;
+  padding: 12px 20px;
+  border-radius: 20px 20px 0 0;
 }
 
 .content__DateAndTitleText {
-  padding-top: 20px;
   font-weight: bold;
   font-family: Yu Gothic, Meiryo, MS PGothic, Noto Sans JP, sans-serif;
+  color: #ffffff;
 }
 
 .content__heading {
-  padding-top: 20px;
+  color: #ffffff;
+}
+
+.content__body {
+  padding: 40px 20px;
+}
+
+.content__postWrap {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content__postBox {
+  margin-right: auto;
+  padding: 20px;
+  width: 45%;
+  font-weight: bold;
+  font-size: 1.7rem;
+  font-family: Yu Gothic, Meiryo, MS PGothic, Noto Sans JP, sans-serif;
+  background: #ffffff;
+  line-height: 1.75;
+  border-radius: 30px;
+}
+
+.content__postBox:nth-child(2n) {
+  width: 45%;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.content__postText {
+  text-align: center;
 }
 
 /*******************************
@@ -579,4 +618,42 @@ ul {
 
 .single {
   max-width: 680px;
+}
+
+.single__postWrap {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.single__commentsWrap {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.singleRelated {
+  padding-top: 20px;
+}
+
+/*******************************
+| comments(comments.php)
+*******************************/
+.comment__formNameText {
+  padding: 4px;
+  margin-top: 20px;
+  border: solid 1px #333333;
+}
+
+.comment__formEmailText {
+  padding: 4px;
+  margin-top: 20px;
+  border: solid 1px #333333;
+}
+
+.comment__formTextarea {
+  padding: 4px;
+  margin-top: 20px;
+  border: solid 1px #333333;
 }/*# sourceMappingURL=style.css.map */

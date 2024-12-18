@@ -1,7 +1,7 @@
 
 
 <?php get_header(); ?>
-    <div class="u-contentFlex u-contentWidth u-contentPaddingTop">
+    <div class="u-contentFlex u-content u-contentPaddingTopBottom">
         
         <div class="privateBlog__container">
             <section class="privateBlog ">

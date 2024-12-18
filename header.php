@@ -4,7 +4,7 @@
     <meta charset="<?php bloginfo("charset"); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ページのタイトルをサイトタイトルと一緒に出力させるソース -->
+    <?php if (is_singular()) wp_enqueue_script("comment-reply"); ?>
     <title>
         <?php
         global $page, $paged;
@@ -23,7 +23,7 @@
 <?php wp_head();?>
 </head>
 <body>
-<header class="header u-contentWidth">
+<header class="header u-content">
     <h1><a href="<?php echo home_url('/');?>"><?php bloginfo('name');?></a></h1>
     <!-- //ページ上のアイコンやサーチボックスのソース、手順5に記載あり -->
     <div id="cntctAndSrch" class="search">
