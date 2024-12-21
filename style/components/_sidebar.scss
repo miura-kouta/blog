@@ -5,18 +5,10 @@
 *******************************/
 
 .sidebar {
-  //   background-color: #ffdab9;
-  // width: 320px;
-  margin-left: 20px;
-
-  flex-shrink: 1;
-
   display: block;
-  // width: 100%;
-  // min-width: 320px;
-  // max-width: 320px;
-
+  margin-left: 20px;
   width: 320px;
+  flex-shrink: 1;
 }
 
 .sideBar__categoryTitle {
@@ -27,6 +19,14 @@
 .sideBar__categoryMenu {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.sideBar__categoryLink {
+  transition: 0.3s all;
+}
+
+.sideBar__categoryLink:hover {
+  opacity: 0.7;
 }
 
 .sideBar__tagsTitle {
@@ -41,6 +41,11 @@
   flex-wrap: wrap;
 }
 
-.tag-cloud-link {
+.sideBar__tagLink {
   padding-right: 8px;
+  transition: 0.3s all;
+}
+
+.sideBar__tagLink:hover {
+  opacity: 0.7;
 }

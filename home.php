@@ -4,7 +4,7 @@
     <h1 class="home__heading u-headingLv1">MK BLOGトップページ</h1>
     <div class="u-contentFlex u-content u-contentPaddingTopBottom">
         <div class="home__container">
-            <section class="home u-contentGrid">
+            <section class="home u-contentGrid u-contentOverflowWrap">
                 <?php
                 // get_query_var('paged')現在のページ番号を取得（'paged'パラメータが設定されていない場合は1を使用）
                 $paged = get_query_var('paged') ? get_query_var('paged') : 1;

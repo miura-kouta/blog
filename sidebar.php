@@ -1,5 +1,16 @@
 
 <aside class="sidebar">
+<!-- フィルターフック -->
+<?php
+  add_filter('wp_list_categories', function ($output) {
+    return str_replace('<a ', '<a class="sideBar__categoryLink" ', $output);
+  });
+
+  add_filter('wp_generate_tag_cloud', function ($tags) {
+    return str_replace('<a ', '<a class="sideBar__tagLink" ', $tags);
+  });
+?>
+
   <dl class="sideBar__categoryWrap">
     <dt class="sideBar__categoryTitle"><h4>Category</h4></dt>
     <dd >

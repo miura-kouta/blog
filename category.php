@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
-<section class="category">
-<h1 class="category__heading u-headingLv1"><?php single_cat_title(); ?></h1>
+<section class="tag">
+<h1 class="tag__heading u-headingLv1"><?php single_cat_title(); ?></h1>
 
 <div class="u-contentFlex u-content u-contentPaddingTopBottom">
   <div>
-    <div class="u-contentGrid">
+    <div class="u-contentGrid u-contentOverflowWrap">
       <?php
           if (have_posts()) : 
             while (have_posts()) :
@@ -27,12 +27,9 @@
     ?>
 
   </div>
-
   <?php get_sidebar(); ?> 
 </div>
 
 </section>
-
-
 <?php get_footer(); ?>
 
