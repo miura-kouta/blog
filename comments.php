@@ -1,4 +1,4 @@
-<div id="comment" class="comment">
+<div class="comment">    
 <?php
 $aria_req = ( get_option( 'require_name_email' ) ? ' aria-required="true"' : '' );
 $html5 = current_theme_supports('html5', 'comment-form');
@@ -11,7 +11,8 @@ $html5 = current_theme_supports('html5', 'comment-form');
 <?php endif; ?>
 <?php
 $args = array(
-    'title_reply' => 'コメントを残す',
+    'class_form' => 'comment__form', 
+    'title_reply' => '<p class="comment__title">コメントを残す</p>',
     'label_submit' => 'コメントを送信する',
     'comment_notes_before' => '<p class="commentNotesBefore">入力エリアすべてが必須項目です。メールアドレスが公開されることはありません。</p>',
     'comment_notes_after'  => '<p class="commentNotesAfter">内容をご確認の上、送信してください。</p>',

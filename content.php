@@ -11,6 +11,7 @@
         <nav class="content__postWrap">
             <div class="content__postBox"><p class="content__postText">←前の記事</p><?php previous_post_link('%link', '%title'); ?></div> 
             <div class="content__postBox"><p class="content__postText">次の記事→<p><?php next_post_link('%link', '%title'); ?></div>
+
         </nav>
   
 

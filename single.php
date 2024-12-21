@@ -16,11 +16,10 @@
       <div class="single__postWrap">
         <h1>関連記事</h1>
         <?php get_template_part('single_related'); ?>      
-    
+        </div>
         <div class="single__commentsWrap">
             <?php comments_template(); ?>
         </div>
-      </div>
     </article>
 
   </section>

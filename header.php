@@ -4,6 +4,7 @@
     <meta charset="<?php bloginfo("charset"); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.webp">
     <?php if (is_singular()) wp_enqueue_script("comment-reply"); ?>
     <title>
         <?php
@@ -24,8 +25,7 @@
 </head>
 <body>
 <header class="header u-content">
-    <h1><a href="<?php echo home_url('/');?>"><?php bloginfo('name');?></a></h1>
-    <!-- //ページ上のアイコンやサーチボックスのソース、手順5に記載あり -->
+    <h1 class="header__logo"><a href="<?php echo home_url('/');?>"> <img src="<?php echo get_template_directory_uri(); ?>/images/logo.webp" alt="サイトのロゴ"></a></h1>
     <div id="cntctAndSrch" class="search">
         <div id="contact_and_search" class="clearfix">
             <div id="searchBox">

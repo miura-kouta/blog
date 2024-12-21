@@ -401,7 +401,11 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 56px;
+  height: 68px;
+}
+
+.header__logo {
+  width: 80px;
 }
 
 /*******************************
@@ -514,10 +518,63 @@ ul {
   padding-top: 40px;
 }
 
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .page-numbers {
-  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 4px;
   margin-right: 4px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  font-size: 2rem;
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s all;
+}
+
+.page-numbers:hover {
+  background-color: #e6adb7;
+  color: #ffffff;
+}
+
+.page-numbers.current {
+  background-color: #e6adb7;
+  color: #ffffff;
+}
+
+.next.page-numbers {
+  width: 56px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: 0.3s all;
+}
+
+.next.page-numbers:hover {
+  background-color: #e6adb7;
+  color: #ffffff;
+}
+
+.prev.page-numbers {
+  width: 56px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: 0.3s all;
+}
+
+.prev.page-numbers:hover {
+  background-color: #e6adb7;
+  color: #ffffff;
 }
 
 /*******************************
@@ -589,7 +646,6 @@ ul {
 
 .content__postBox {
   margin-right: auto;
-  padding: 20px;
   width: 45%;
   font-weight: bold;
   font-size: 1.7rem;
@@ -597,6 +653,7 @@ ul {
   background: #ffffff;
   line-height: 1.75;
   border-radius: 30px;
+  overflow: hidden;
 }
 
 .content__postBox:nth-child(2n) {
@@ -606,6 +663,9 @@ ul {
 }
 
 .content__postText {
+  padding: 4px;
+  color: #ffffff;
+  background: #333333;
   text-align: center;
 }
 
@@ -628,11 +688,11 @@ ul {
 
 .single__commentsWrap {
   margin-top: 40px;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 30px;
 }
 
+/*******************************
+| (single_related.php)
+*******************************/
 .singleRelated {
   padding-top: 20px;
 }
@@ -640,20 +700,67 @@ ul {
 /*******************************
 | comments(comments.php)
 *******************************/
-.comment__formNameText {
-  padding: 4px;
-  margin-top: 20px;
-  border: solid 1px #333333;
+.comment {
+  background-color: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
-.comment__formEmailText {
+.comment__form {
+  padding: 20px;
+}
+
+.comment__title {
   padding: 4px;
+  color: #ffffff;
+  background: #333333;
+  text-align: center;
+}
+
+.commentNotesBefore {
   margin-top: 20px;
-  border: solid 1px #333333;
 }
 
 .comment__formTextarea {
   padding: 4px;
   margin-top: 20px;
   border: solid 1px #333333;
+}
+
+.commentNotesAfter {
+  margin-top: 20px;
+}
+
+.comment__formNameInput {
+  width: 100%;
+  padding: 4px;
+  margin-top: 20px;
+  border: solid 1px #333333;
+}
+
+.comment__formEmailInput {
+  width: 100%;
+  padding: 4px;
+  margin-top: 20px;
+  border: solid 1px #333333;
+}
+
+.comment-form-cookies-consent {
+  margin-top: 20px;
+}
+
+.form-submit {
+  display: block;
+  margin-top: 20px;
+  padding: 4px;
+  width: 180px;
+  background-color: #333333;
+  border-radius: 30px;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.form-submit:hover {
+  background-color: #e6adb7;
 }/*# sourceMappingURL=style.css.map */
