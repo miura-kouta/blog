@@ -1,12 +1,8 @@
 <?php get_header(); ?>
 
-<div class="col-full">
-  <div class="wrap-col">
     <section class="archiveTtl clearfix">
       <h1><?php single_cat_title(); ?></h1>
     </section>
-  </div>
-</div>
 
 <?php
 if (have_posts()) : 

@@ -15,8 +15,15 @@
   // }
 }
 
+.u-contentGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 40px;
+  overflow-wrap: break-word;
+}
+
 .u-contentPaddingTopBottom {
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 80px;
 }
 
@@ -25,7 +32,7 @@
 }
 
 .u-headingLv1 {
-  font-size: 1.8rem;
+  font-size: 3rem;
   letter-spacing: 0.341em;
   color: var.$ColorBlack1;
   font-weight: bold;

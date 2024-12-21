@@ -25,7 +25,7 @@
 </head>
 <body>
 <header class="header u-content">
-    <h1 class="header__logo"><a href="<?php echo home_url('/');?>"> <img src="<?php echo get_template_directory_uri(); ?>/images/logo.webp" alt="サイトのロゴ"></a></h1>
+    <div class="header__logo"><a href="<?php echo home_url('/');?>"> <img src="<?php echo get_template_directory_uri(); ?>/images/logo.webp" alt="サイトのロゴ"></a></div>
     <div id="cntctAndSrch" class="search">
         <div id="contact_and_search" class="clearfix">
             <div id="searchBox">

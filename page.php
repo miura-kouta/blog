@@ -1,20 +1,18 @@
 
 
 
-<!-- 本ブログのpage.php -->
 <?php get_header();?>
-<!--------------MainContent--------------->
 <article id="main-content">
-<div class="grid"><!-- GRID MOTHER -->
+<div class="grid">
 <?php
 if (have_posts()) : 
   while (have_posts()) :
     the_post();
-    get_template_part('content-page');
+    get_template_part('page-content');
   endwhile;
 endif;
 ?>
-</div><!-- ^ .grid = GRID MOTHER END-->
-</article><!-- ^ main-content END-->
+</div>
+</article>
 <?php get_sidebar();?>
 <?php get_footer();?>

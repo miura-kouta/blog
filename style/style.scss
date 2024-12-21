@@ -16,10 +16,14 @@
 @use "./components/header";
 @use "./components/footer";
 @use "./components/sidebar";
+@use "./components/searchform";
+@use "./components/content";
 
 //各ページ用CSS
 @use "./pages/home";
 @use "./pages/post";
+@use "./pages/single";
+@use "./pages/category";
 
 //ページネーション
 .navigation {
@@ -84,123 +88,6 @@
 .prev.page-numbers:hover {
   background-color: var.$ColorMain;
   color: var.$ColorWhite1;
-}
-
-/*******************************
-| (searchform.php)
-*******************************/
-.searchform {
-  font-size: 81%;
-  position: relative;
-  width: 150px;
-  height: auto;
-}
-.searchform__inputText {
-  height: 22px;
-  width: 150px;
-  padding: 0 55px 0 10px;
-  border: 1px solid #333333;
-  position: absolute;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 11px;
-}
-.searchform__submitButton {
-  position: absolute;
-  right: 0;
-  width: 60px;
-  height: 22px;
-  color: var.$ColorWhite1;
-  line-height: 22px;
-  background-color: var.$ColorBlue1;
-  border-radius: 0px 11px 11px 0px / 0px 11px 11px 0px;
-  cursor: pointer;
-}
-
-/*******************************
-| content(content.php)
-*******************************/
-
-.content__wrap {
-  background-color: var.$ColorWhite1;
-  border-radius: 30px;
-}
-
-.content__headingWrap {
-  background-color: var.$ColorBlack1;
-  padding: 12px 20px;
-  border-radius: 20px 20px 0 0;
-}
-
-.content__DateAndTitleText {
-  font-weight: bold;
-  font-family: var.$font-family1;
-  color: var.$ColorWhite1;
-}
-
-.content__heading {
-  color: var.$ColorWhite1;
-}
-
-.content__body {
-  padding: 40px 20px;
-}
-
-.content__postWrap {
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.content__postBox {
-  margin-right: auto;
-  // padding: 20px;
-  width: 45%;
-  font-weight: bold;
-  font-size: 1.7rem;
-  font-family: var.$font-family1;
-  background: var.$ColorWhite1;
-  line-height: 1.75;
-  border-radius: 30px;
-  overflow: hidden;
-}
-
-.content__postBox:nth-child(2n) {
-  width: 45%;
-  margin-right: 0;
-  margin-left: auto;
-}
-
-.content__postText {
-  padding: 4px;
-  color: var.$ColorWhite1;
-  background: var.$ColorBlack1;
-  text-align: center;
-}
-
-/*******************************
-| single(single.php)
-*******************************/
-.single__container {
-  justify-content: center;
-}
-
-.single {
-  max-width: 680px;
-}
-
-.single__postWrap {
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.single__commentsWrap {
-  margin-top: 40px;
-  // padding: 20px;
-  // padding: 40px 20px;
-  // background-color: var.$ColorWhite1;
-  // border-radius: 30px;
 }
 
 /*******************************

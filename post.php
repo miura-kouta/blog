@@ -1,5 +1,5 @@
   
-<section class="post">
+<section class="post ">
     <article class="post__card">
         <?php if ( has_post_thumbnail() ) : ?>
             <a href="<?php the_permalink(); ?>" class="post__linkPic">
