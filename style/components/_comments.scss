@@ -1,0 +1,70 @@
+@use "../setting/variables" as var;
+
+/*******************************
+| comments(comments.php)
+*******************************/
+
+.comments {
+  background-color: var.$ColorWhite1;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.comments__form {
+  padding: 20px;
+}
+
+.comments__title {
+  padding: 4px;
+  color: var.$ColorWhite1;
+  background: var.$ColorBlack1;
+  text-align: center;
+}
+
+.commentsNotesBefore {
+  margin-top: 20px;
+}
+
+.comments__formTextarea {
+  padding: 4px;
+  margin-top: 20px;
+  border: solid 1px var.$ColorBlack1;
+}
+
+.commentsNotesAfter {
+  margin-top: 20px;
+}
+
+.comments__formNameInput {
+  width: 100%;
+  padding: 4px;
+  margin-top: 20px;
+  border: solid 1px var.$ColorBlack1;
+}
+
+.comments__formEmailInput {
+  width: 100%;
+  padding: 4px;
+  margin-top: 20px;
+  border: solid 1px var.$ColorBlack1;
+}
+
+.comments-form-cookies-consent {
+  margin-top: 20px;
+}
+
+.form-submit {
+  display: block;
+  margin-top: 20px;
+  padding: 4px;
+  width: 180px;
+  background-color: var.$ColorBlack1;
+  border-radius: 30px;
+  color: var.$ColorWhite1;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.form-submit:hover {
+  background-color: var.$ColorMain;
+}

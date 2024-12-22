@@ -2,7 +2,7 @@
 
 
 <?php get_header();?>
-  <div class="single__container u-contentFlex u-content u-contentPaddingTopBottom">
+  <div class="u-contentFlex u-content u-contentPaddingTopBottom">  
   <section class="single">
     <article>
       <?php

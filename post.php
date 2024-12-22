@@ -14,7 +14,8 @@
       <div class="post__body">
         <time datetime="<?php echo get_the_date('Y/m/d'); ?>" class="post__date"><?php echo get_the_date('Y/m/d'); ?></time>
         <a href="<?php the_permalink(); ?>" class=""><h2 class="post__heading"><?php the_title(); ?></h2></a>
-        <a href="<?php the_permalink(); ?>"><?php the_excerpt();?></a>
+        <a href="<?php the_permalink(); ?>" class="post__text"><?php the_excerpt(); ?></a>
+
       </div>
     </article>
 

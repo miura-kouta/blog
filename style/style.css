@@ -384,6 +384,7 @@ ul {
 
 .u-contentFlex {
   display: flex;
+  justify-content: center;
 }
 
 .u-headingLv1 {
@@ -580,6 +581,74 @@ ul {
 }
 
 /*******************************
+| comments(comments.php)
+*******************************/
+.comments {
+  background-color: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.comments__form {
+  padding: 20px;
+}
+
+.comments__title {
+  padding: 4px;
+  color: #ffffff;
+  background: #333333;
+  text-align: center;
+}
+
+.commentsNotesBefore {
+  margin-top: 20px;
+}
+
+.comments__formTextarea {
+  padding: 4px;
+  margin-top: 20px;
+  border: solid 1px #333333;
+}
+
+.commentsNotesAfter {
+  margin-top: 20px;
+}
+
+.comments__formNameInput {
+  width: 100%;
+  padding: 4px;
+  margin-top: 20px;
+  border: solid 1px #333333;
+}
+
+.comments__formEmailInput {
+  width: 100%;
+  padding: 4px;
+  margin-top: 20px;
+  border: solid 1px #333333;
+}
+
+.comments-form-cookies-consent {
+  margin-top: 20px;
+}
+
+.form-submit {
+  display: block;
+  margin-top: 20px;
+  padding: 4px;
+  width: 180px;
+  background-color: #333333;
+  border-radius: 30px;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.form-submit:hover {
+  background-color: #e6adb7;
+}
+
+/*******************************
 | home(home.php)
 *******************************/
 .home__heading {
@@ -626,6 +695,14 @@ ul {
   padding: 8px;
 }
 
+.post__date {
+  transition: 0.3s all;
+}
+
+.post:hover .post__date {
+  opacity: 0.7;
+}
+
 .post__heading {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -634,15 +711,24 @@ ul {
   text-overflow: ellipsis;
   color: #1a73e8;
   font-size: 2rem;
+  transition: 0.3s all;
+}
+
+.post:hover .post__heading {
+  opacity: 0.7;
+}
+
+.post__text {
+  transition: 0.3s all;
+}
+
+.post:hover .post__text {
+  opacity: 0.7;
 }
 
 /*******************************
 | single(single.php)
 *******************************/
-.single__container {
-  justify-content: center;
-}
-
 .single {
   max-width: 680px;
 }
@@ -671,6 +757,40 @@ ul {
 .tag__heading {
   padding-top: 80px;
   text-align: center;
+}
+
+/*******************************
+| search(search.php)
+*******************************/
+.search__container {
+  padding-top: 20px;
+}
+
+/*******************************
+| page404(404.php)
+*******************************/
+.page404__container {
+  padding-top: 20px;
+}
+
+.page404__headingLv2 {
+  padding-top: 20px;
+}
+
+.page404__menu {
+  padding-top: 20px;
+}
+
+.page404__link {
+  display: block;
+  padding-top: 20px;
+  color: #1a73e8;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.page404__link:hover {
+  opacity: 0.7;
 }
 
 .navigation {
@@ -744,70 +864,19 @@ ul {
   padding-top: 20px;
 }
 
+.singleRelated__headingLv2 {
+  transition: 0.3s all;
+}
+
+.singleRelated__text {
+  transition: 0.3s all;
+}
+
+.singleRelated:hover .singleRelated__headingLv2,
+.singleRelated:hover .singleRelated__text {
+  opacity: 0.7;
+}
+
 /*******************************
 | comments(comments.php)
-*******************************/
-.comment {
-  background-color: #ffffff;
-  border-radius: 30px;
-  overflow: hidden;
-}
-
-.comment__form {
-  padding: 20px;
-}
-
-.comment__title {
-  padding: 4px;
-  color: #ffffff;
-  background: #333333;
-  text-align: center;
-}
-
-.commentNotesBefore {
-  margin-top: 20px;
-}
-
-.comment__formTextarea {
-  padding: 4px;
-  margin-top: 20px;
-  border: solid 1px #333333;
-}
-
-.commentNotesAfter {
-  margin-top: 20px;
-}
-
-.comment__formNameInput {
-  width: 100%;
-  padding: 4px;
-  margin-top: 20px;
-  border: solid 1px #333333;
-}
-
-.comment__formEmailInput {
-  width: 100%;
-  padding: 4px;
-  margin-top: 20px;
-  border: solid 1px #333333;
-}
-
-.comment-form-cookies-consent {
-  margin-top: 20px;
-}
-
-.form-submit {
-  display: block;
-  margin-top: 20px;
-  padding: 4px;
-  width: 180px;
-  background-color: #333333;
-  border-radius: 30px;
-  color: #ffffff;
-  text-align: center;
-  transition: all 0.3s;
-}
-
-.form-submit:hover {
-  background-color: #e6adb7;
-}/*# sourceMappingURL=style.css.map */
+*******************************//*# sourceMappingURL=style.css.map */

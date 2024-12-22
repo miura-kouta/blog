@@ -1,0 +1,28 @@
+@use "../setting/variables" as var;
+
+/*******************************
+| page404(404.php)
+*******************************/
+.page404__container {
+  padding-top: 20px;
+}
+
+.page404__headingLv2 {
+  padding-top: 20px;
+}
+
+.page404__menu {
+  padding-top: 20px;
+}
+
+.page404__link {
+  display: block;
+  padding-top: 20px;
+  color: var.$ColorBlue1;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.page404__link:hover {
+  opacity: 0.7;
+}

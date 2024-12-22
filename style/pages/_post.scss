@@ -40,6 +40,14 @@
   padding: 8px;
 }
 
+.post__date {
+  transition: 0.3s all;
+}
+
+.post:hover .post__date {
+  opacity: 0.7;
+}
+
 .post__heading {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -48,4 +56,17 @@
   text-overflow: ellipsis;
   color: var.$ColorBlue1;
   font-size: 2rem;
+  transition: 0.3s all;
+}
+
+.post:hover .post__heading {
+  opacity: 0.7;
+}
+
+.post__text {
+  transition: 0.3s all;
+}
+
+.post:hover .post__text {
+  opacity: 0.7;
 }
