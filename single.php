@@ -1,7 +1,5 @@
-
-
-
 <?php get_header();?>
+<h1 class="u-headingLv1">投稿記事</h1>
   <div class="u-contentFlex u-content u-contentPaddingTopBottom">  
   <section class="single">
     <article>
@@ -14,7 +12,7 @@
       endif;
       ?>
       <div class="single__postWrap">
-        <h1>関連記事</h1>
+        <h2>関連記事</h2>
         <?php get_template_part('singleRelated'); ?>   
         </div>
         <div class="single__commentsWrap">

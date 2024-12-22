@@ -388,12 +388,14 @@ ul {
 }
 
 .u-headingLv1 {
+  padding-top: 80px;
   font-size: 3rem;
   letter-spacing: 0.341em;
   color: #333333;
   font-weight: bold;
   font-family: Yu Gothic, Meiryo, MS PGothic, Noto Sans JP, sans-serif;
   line-height: 1.75;
+  text-align: center;
 }
 
 .u-headingLv2 {
@@ -451,6 +453,7 @@ ul {
 }
 
 .sideBar__categoryLink {
+  font-size: 16px;
   transition: 0.3s all;
 }
 
@@ -530,10 +533,12 @@ ul {
   font-weight: bold;
   font-family: Yu Gothic, Meiryo, MS PGothic, Noto Sans JP, sans-serif;
   color: #ffffff;
+  padding-top: 4px;
 }
 
 .content__heading {
   color: #ffffff;
+  text-align: left;
 }
 
 .content__body {
@@ -649,11 +654,23 @@ ul {
 }
 
 /*******************************
-| home(home.php)
+| singleRelated(singleRelated.php)
 *******************************/
-.home__heading {
-  padding-top: 80px;
-  text-align: center;
+.singleRelated {
+  padding-top: 20px;
+}
+
+.singleRelated__headingLv2 {
+  transition: 0.3s all;
+}
+
+.singleRelated__text {
+  transition: 0.3s all;
+}
+
+.singleRelated:hover .singleRelated__headingLv2,
+.singleRelated:hover .singleRelated__text {
+  opacity: 0.7;
 }
 
 /*******************************
@@ -727,6 +744,9 @@ ul {
 }
 
 /*******************************
+| home(home.php)
+*******************************/
+/*******************************
 | single(single.php)
 *******************************/
 .single {
@@ -747,32 +767,18 @@ ul {
 | category(category.php)
 *******************************/
 .category__heading {
-  padding-top: 80px;
   text-align: center;
 }
 
 /*******************************
 | tag(tag.php)
 *******************************/
-.tag__heading {
-  padding-top: 80px;
-  text-align: center;
-}
-
 /*******************************
 | search(search.php)
 *******************************/
-.search__container {
-  padding-top: 20px;
-}
-
 /*******************************
 | page404(404.php)
 *******************************/
-.page404__container {
-  padding-top: 20px;
-}
-
 .page404__headingLv2 {
   padding-top: 20px;
 }
@@ -855,28 +861,4 @@ ul {
 .prev.page-numbers:hover {
   background-color: #e6adb7;
   color: #ffffff;
-}
-
-/*******************************
-| (single_related.php)
-*******************************/
-.singleRelated {
-  padding-top: 20px;
-}
-
-.singleRelated__headingLv2 {
-  transition: 0.3s all;
-}
-
-.singleRelated__text {
-  transition: 0.3s all;
-}
-
-.singleRelated:hover .singleRelated__headingLv2,
-.singleRelated:hover .singleRelated__text {
-  opacity: 0.7;
-}
-
-/*******************************
-| comments(comments.php)
-*******************************//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

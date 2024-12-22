@@ -1,7 +1,7 @@
 
 
 <?php get_header(); ?>
-    <h1 class="home__heading u-headingLv1">MK BLOGトップページ</h1>
+    <h1 class="u-headingLv1">MK BLOGトップページ</h1>
     <div class="u-contentFlex u-content u-contentPaddingTopBottom">
         <div class="home__container">
             <section class="home u-contentGrid u-contentOverflowWrap">

@@ -19,10 +19,11 @@
 @use "./components/searchform";
 @use "./components/content";
 @use "./components/comments";
+@use "./components/singleRelated";
+@use "./components/post";
 
 //各ページ用CSS
 @use "./pages/home";
-@use "./pages/post";
 @use "./pages/single";
 @use "./pages/category";
 @use "./pages/tag";
@@ -93,91 +94,3 @@
   background-color: var.$ColorMain;
   color: var.$ColorWhite1;
 }
-
-/*******************************
-| (single_related.php)
-*******************************/
-.singleRelated {
-  padding-top: 20px;
-}
-
-.singleRelated__headingLv2 {
-  transition: 0.3s all;
-}
-
-.singleRelated__text {
-  transition: 0.3s all;
-}
-
-.singleRelated:hover .singleRelated__headingLv2,
-.singleRelated:hover .singleRelated__text {
-  opacity: 0.7;
-}
-
-/*******************************
-| comments(comments.php)
-*******************************/
-// .comment {
-//   background-color: var.$ColorWhite1;
-//   border-radius: 30px;
-//   overflow: hidden;
-// }
-
-// .comment__form {
-//   padding: 20px;
-// }
-
-// .comment__title {
-//   padding: 4px;
-//   color: var.$ColorWhite1;
-//   background: var.$ColorBlack1;
-//   text-align: center;
-// }
-
-// .commentNotesBefore {
-//   margin-top: 20px;
-// }
-
-// .comment__formTextarea {
-//   padding: 4px;
-//   margin-top: 20px;
-//   border: solid 1px var.$ColorBlack1;
-// }
-
-// .commentNotesAfter {
-//   margin-top: 20px;
-// }
-
-// .comment__formNameInput {
-//   width: 100%;
-//   padding: 4px;
-//   margin-top: 20px;
-//   border: solid 1px var.$ColorBlack1;
-// }
-
-// .comment__formEmailInput {
-//   width: 100%;
-//   padding: 4px;
-//   margin-top: 20px;
-//   border: solid 1px var.$ColorBlack1;
-// }
-
-// .comment-form-cookies-consent {
-//   margin-top: 20px;
-// }
-
-// .form-submit {
-//   display: block;
-//   margin-top: 20px;
-//   padding: 4px;
-//   width: 180px;
-//   background-color: var.$ColorBlack1;
-//   border-radius: 30px;
-//   color: var.$ColorWhite1;
-//   text-align: center;
-//   transition: all 0.3s;
-// }
-
-// .form-submit:hover {
-//   background-color: var.$ColorMain;
-// }

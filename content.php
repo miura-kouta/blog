@@ -2,7 +2,7 @@
       <article class="content__wrap">
         <div class="content__headingWrap">
           <p class="content__DateAndTitleText"><?php the_time('Y/n/d'); ?>　|　<?php $cat = get_the_category(); $cat = $cat[0]; $cat_name = $cat->cat_name; echo $cat_name; ?></p>
-          <h1 class="content__heading u-headingLv1"><?php the_title();?></h1>
+          <h2 class="content__heading u-headingLv2"><?php the_title();?></h2>
         </div>
         <?php the_post_thumbnail(); ?> 
         <div class="content__body"><?php the_content();?></div> 

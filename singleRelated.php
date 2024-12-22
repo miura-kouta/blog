@@ -15,7 +15,7 @@
     while ($query -> have_posts()) : $query -> the_post(); ?>
       <div class="singleRelated">
         <h2 class="singleRelated__headingLv2"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        <p class="singleRelated__text"><?php echo mb_substr(strip_tags($post->post_content), 0, 80); ?><a href="<?php the_permalink(); ?>"> [記事を読む]</a></p>
+        <a href="<?php the_permalink(); ?>"><p class="singleRelated__text"><?php echo mb_substr(strip_tags($post->post_content), 0, 80); ?>[記事を読む]</p></a>
       </div>
     <?php
   endwhile;
