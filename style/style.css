@@ -433,8 +433,13 @@ ul {
 .sidebar {
   display: block;
   margin-left: 20px;
-  width: 320px;
   flex-shrink: 1;
+  width: 200px;
+}
+
+.sideBar__categoryWrap {
+  display: block;
+  width: 200px;
 }
 
 .sideBar__categoryTitle {

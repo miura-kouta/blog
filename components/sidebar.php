@@ -22,8 +22,12 @@
 
   <dl class="sideBar__tagsWrap">
     <dt class="sideBar__tagsTitle"><h4>Tags</h4></dt>
-    <dd >
+    <dd class="sideBar__tagsBox" >
         <?php wp_tag_cloud('format=list&number=0&smallest=16&largest=16&unit=px&orderby=count');?>
     </dd>
   </dl>
+
+
+
+
 </aside>
