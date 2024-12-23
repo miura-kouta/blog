@@ -307,16 +307,6 @@ html {
       font-size: 50%;
     } */
 }
-@media screen and (max-width: 1280px) {
-  html {
-    font-size: 52.5%;
-  }
-}
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 40%;
-  }
-}
 
 html {
   overflow-x: hidden;
@@ -368,7 +358,7 @@ ul {
 
 .u-contentGrid {
   display: grid;
-  grid-template-columns: repeat(3, 320px);
+  grid-template-columns: repeat(auto-fill, minmax(320px, 3fr));
   gap: 40px;
   overflow-wrap: break-word;
 }
@@ -385,6 +375,11 @@ ul {
 .u-contentFlex {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .u-contentFlex {
+    flex-direction: column-reverse;
+  }
 }
 
 .u-headingLv1 {
@@ -448,13 +443,23 @@ ul {
 }
 
 .sideBar__categoryMenu {
-  padding-top: 20px;
+  padding-top: 8px;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .sideBar__categoryMenu {
+    display: flex;
+  }
 }
 
 .sideBar__categoryLink {
   font-size: 16px;
   transition: 0.3s all;
+}
+@media screen and (max-width: 768px) {
+  .sideBar__categoryLink {
+    padding-right: 8px;
+  }
 }
 
 .sideBar__categoryLink:hover {
@@ -468,9 +473,9 @@ ul {
 
 .wp-tag-cloud {
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
   flex-wrap: wrap;
+  padding-top: 8px;
+  padding-bottom: 20px;
 }
 
 .sideBar__tagLink {

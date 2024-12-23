@@ -17,13 +17,21 @@
 }
 
 .sideBar__categoryMenu {
-  padding-top: 20px;
+  padding-top: 8px;
   padding-bottom: 20px;
+
+  @include var.mq(tab) {
+    display: flex;
+  }
 }
 
 .sideBar__categoryLink {
   font-size: 16px;
   transition: 0.3s all;
+
+  @include var.mq(tab) {
+    padding-right: 8px;
+  }
 }
 
 .sideBar__categoryLink:hover {
@@ -37,9 +45,9 @@
 
 .wp-tag-cloud {
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
   flex-wrap: wrap;
+  padding-top: 8px;
+  padding-bottom: 20px;
 }
 
 .sideBar__tagLink {

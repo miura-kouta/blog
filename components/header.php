@@ -25,13 +25,9 @@
 </head>
 <body>
 <header class="header u-content">
-    <div class="header__logo"><a href="<?php echo home_url('/');?>"> <img src="<?php echo get_template_directory_uri(); ?>/images/logo.webp" alt="サイトのロゴ"></a></div>
-    <div id="cntctAndSrch" class="search">
-        <div id="contact_and_search" class="clearfix">
-            <div id="searchBox">
-                <?php get_search_form(); ?>
-            </div>
-        </div>
+    <div class="header__logo">
+        <a href="<?php echo home_url('/');?>"> <img src="<?php echo get_template_directory_uri(); ?>/images/logo.webp" alt="サイトのロゴ"></a>
     </div>
+    <?php get_template_part('components/searchform'); ?>
 </header>
 <main>

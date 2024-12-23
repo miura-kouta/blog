@@ -1,4 +1,4 @@
-<div class="comments">    
+<section class="comments">    
     <?php
     $aria_req = ( get_option( 'require_name_email' ) ? ' aria-required="true"' : '' );
     $html5 = current_theme_supports('html5', 'comment-form');
@@ -27,5 +27,5 @@
     );
     comment_form( $args );
     ?>
-</div>
+</section>
 

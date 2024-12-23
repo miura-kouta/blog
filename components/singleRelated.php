@@ -1,4 +1,5 @@
-<!-- 関連記事を表示 -->
+<?php /* 関連記事を表示 */ ?>
+
 <?php
   $categories = get_the_category($post->ID);
   $category_ID = array();

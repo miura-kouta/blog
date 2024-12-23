@@ -4,7 +4,7 @@
           if (have_posts()) : 
             while (have_posts()) :
               the_post();
-              get_template_part('post');
+              get_template_part('/components/post'); 
             endwhile;
           else : ?>
             <div>
@@ -13,7 +13,7 @@
             </div>
           <?php endif; ?>
         </div>
-            <!-- ページネーションを表示 -->
+            <?php /*ページネーション  */ ?>
             <?php  
             the_posts_pagination(array(
                 'mid_size' => 1,              
