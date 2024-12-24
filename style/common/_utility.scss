@@ -7,19 +7,17 @@
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-
-  // @include var.mq(l-pc) {
-  //   padding-right: 0;
-  //   padding-left: 0;
-  //   width: 90%;
-  // }
 }
 
 .u-contentGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 3fr));
-  gap: 40px;
+  gap: 20px;
   overflow-wrap: break-word;
+
+  @include var.mq(tab) {
+    display: block;
+  }
 }
 
 .u-contentOverflowWrap {

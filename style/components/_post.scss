@@ -6,6 +6,10 @@
 
 .post__card {
   min-height: 400px;
+
+  @include var.mq(tab) {
+    width: 100%;
+  }
 }
 
 .post__linkPic {
