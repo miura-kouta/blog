@@ -46,3 +46,4 @@ function custom_comment_tags($data)
   unset($allowedtags['strong']);
   return $data;
 }
+
