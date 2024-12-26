@@ -4,7 +4,34 @@
 | comments(comments.php)
 *******************************/
 
-.comments {
+.avatar {
+  display: none;
+}
+
+.comments h3 {
+  height: 28px;
+  color: var.$ColorWhite1;
+  background: var.$ColorBlack1;
+  text-align: center;
+}
+
+.comment {
+  margin-top: 20px;
+  background-color: var.$ColorWhite1;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.comment:first-child {
+  margin-top: 0;
+}
+
+.comment__content {
+  padding: 20px;
+}
+
+.comment-respond {
+  margin-top: 40px;
   background-color: var.$ColorWhite1;
   border-radius: 30px;
   overflow: hidden;
@@ -12,10 +39,11 @@
 
 .comments__form {
   padding: 20px;
+  background-color: var.$ColorWhite1;
 }
 
 .comments__title {
-  padding: 4px;
+  height: 28px;
   color: var.$ColorWhite1;
   background: var.$ColorBlack1;
   text-align: center;
@@ -29,6 +57,9 @@
   padding: 4px;
   margin-top: 20px;
   border: solid 1px var.$ColorBlack1;
+
+  max-width: 400px;
+  width: 100%;
 }
 
 .commentsNotesAfter {
@@ -36,14 +67,14 @@
 }
 
 .comments__formNameInput {
-  width: 100%;
+  width: 80%;
   padding: 4px;
   margin-top: 20px;
   border: solid 1px var.$ColorBlack1;
 }
 
 .comments__formEmailInput {
-  width: 100%;
+  width: 80%;
   padding: 4px;
   margin-top: 20px;
   border: solid 1px var.$ColorBlack1;

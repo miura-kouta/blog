@@ -1,0 +1,123 @@
+@use "../setting/variables" as var;
+
+/*******************************
+| portfolio(portfolio.php)
+*******************************/
+.portfolio {
+  margin-top: 80px;
+}
+
+.portfolio__headingWrap {
+  text-align: center;
+}
+
+.portfolio__mainHeading {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.portfolio__subHeading {
+  position: relative;
+  display: inline;
+  font-size: 2rem;
+}
+
+.portfolio__subHeading::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -4.4rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  z-index: 1;
+  height: 1px;
+  width: 3rem;
+  background-color: var.$ColorBlack1;
+}
+.portfolio__subHeading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -4.4rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  z-index: 1;
+  height: 1px;
+  width: 3rem;
+  background-color: var.$ColorBlack1;
+}
+
+.portfolio__itemBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 100px;
+  border-radius: 45px;
+  background: linear-gradient(to right, var.$ColorSub 0%, #ffc0cb 100%);
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-family: var.$font-family1;
+}
+@media (max-width: 767px) {
+  .portfolio__itemBtn {
+    width: 100%;
+    max-width: 220px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+}
+
+.portfolio__itemBtn:hover {
+  transition: 0.6s all;
+  background: var.$ColorBlack1;
+  border-radius: 50px;
+
+  .portfolio__textBtn {
+    display: inline-block;
+    background: linear-gradient(90deg, var.$ColorSub 0%, #ffc0cb 100%);
+    background: -webkit-linear-gradient(0deg, var.$ColorSub 0%, #ffc0cb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.portfolio__itemBtn ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 45px;
+  border: 6px solid transparent;
+  background: var.$ColorBlack1 border-box border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0) border-box;
+  -webkit-mask-composite: destination-out;
+  mask: linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0) border-box;
+  mask-composite: exclude;
+  width: 400px;
+  height: 100px;
+  transition: 0.6s all;
+}
+@media (max-width: 767px) {
+  .portfolio__itemBtn ::before {
+    border: 3px solid transparent;
+    width: 100%;
+    max-width: 220px;
+    height: 60px;
+  }
+}
+
+.portfolio__itemBtn :hover::before {
+  background: linear-gradient(90deg, var.$ColorSub 0%, #ffc0cb 100%) border-box
+    border-box;
+}

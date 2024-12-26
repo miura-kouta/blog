@@ -3,11 +3,23 @@
 /*******************************
 | post(post.php)
 *******************************/
+.post {
+  width: 100%;
+
+  @include var.mq(tab) {
+    margin-top: 40px;
+  }
+}
+
+// .post:first-child {
+//   @include var.mq(tab) {
+//     margin-top: 20;
+//   }
+// }
 
 .post__linkPic {
   overflow: hidden;
   display: block;
-  border-radius: 12px 12px 12px 12px / 12px 12px 12px 12px;
 }
 
 .post__linkPic .attachment-post-thumbnail {

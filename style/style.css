@@ -75,6 +75,10 @@ ul {
   padding-bottom: 80px;
 }
 
+.u-contentPaddingTop {
+  padding-top: 40px;
+}
+
 .u-contentFlex {
   display: flex;
   justify-content: center;
@@ -198,6 +202,10 @@ ul {
   padding-bottom: 20px;
 }
 
+.sideBar__tagsWrap .wp-tag-cloud {
+  padding-bottom: 0;
+}
+
 .sideBar__tagLink {
   padding-right: 8px;
   transition: 0.3s all;
@@ -313,7 +321,34 @@ ul {
 /*******************************
 | comments(comments.php)
 *******************************/
-.comments {
+.avatar {
+  display: none;
+}
+
+.comments h3 {
+  height: 28px;
+  color: #ffffff;
+  background: #333333;
+  text-align: center;
+}
+
+.comment {
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.comment:first-child {
+  margin-top: 0;
+}
+
+.comment__content {
+  padding: 20px;
+}
+
+.comment-respond {
+  margin-top: 40px;
   background-color: #ffffff;
   border-radius: 30px;
   overflow: hidden;
@@ -321,10 +356,11 @@ ul {
 
 .comments__form {
   padding: 20px;
+  background-color: #ffffff;
 }
 
 .comments__title {
-  padding: 4px;
+  height: 28px;
   color: #ffffff;
   background: #333333;
   text-align: center;
@@ -338,6 +374,8 @@ ul {
   padding: 4px;
   margin-top: 20px;
   border: solid 1px #333333;
+  max-width: 400px;
+  width: 100%;
 }
 
 .commentsNotesAfter {
@@ -345,14 +383,14 @@ ul {
 }
 
 .comments__formNameInput {
-  width: 100%;
+  width: 80%;
   padding: 4px;
   margin-top: 20px;
   border: solid 1px #333333;
 }
 
 .comments__formEmailInput {
-  width: 100%;
+  width: 80%;
   padding: 4px;
   margin-top: 20px;
   border: solid 1px #333333;
@@ -401,10 +439,18 @@ ul {
 /*******************************
 | post(post.php)
 *******************************/
+.post {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .post {
+    margin-top: 40px;
+  }
+}
+
 .post__linkPic {
   overflow: hidden;
   display: block;
-  border-radius: 12px 12px 12px 12px/12px 12px 12px 12px;
 }
 
 .post__linkPic .attachment-post-thumbnail {
@@ -462,6 +508,125 @@ ul {
 
 .post:hover .post__text {
   opacity: 0.7;
+}
+
+/*******************************
+| portfolio(portfolio.php)
+*******************************/
+.portfolio {
+  margin-top: 80px;
+}
+
+.portfolio__headingWrap {
+  text-align: center;
+}
+
+.portfolio__mainHeading {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.portfolio__subHeading {
+  position: relative;
+  display: inline;
+  font-size: 2rem;
+}
+
+.portfolio__subHeading::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -4.4rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  z-index: 1;
+  height: 1px;
+  width: 3rem;
+  background-color: #333333;
+}
+
+.portfolio__subHeading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -4.4rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  z-index: 1;
+  height: 1px;
+  width: 3rem;
+  background-color: #333333;
+}
+
+.portfolio__itemBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 100px;
+  border-radius: 45px;
+  background: linear-gradient(to right, #8cfae6 0%, #ffc0cb 100%);
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-family: Yu Gothic, Meiryo, MS PGothic, Noto Sans JP, sans-serif;
+}
+
+@media (max-width: 767px) {
+  .portfolio__itemBtn {
+    width: 100%;
+    max-width: 220px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+}
+.portfolio__itemBtn:hover {
+  transition: 0.6s all;
+  background: #333333;
+  border-radius: 50px;
+}
+.portfolio__itemBtn:hover .portfolio__textBtn {
+  display: inline-block;
+  background: linear-gradient(90deg, #8cfae6 0%, #ffc0cb 100%);
+  background: -webkit-linear-gradient(0deg, #8cfae6 0%, #ffc0cb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.portfolio__itemBtn ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 45px;
+  border: 6px solid transparent;
+  background: #333333 border-box border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
+  -webkit-mask-composite: destination-out;
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
+  mask-composite: exclude;
+  width: 400px;
+  height: 100px;
+  transition: 0.6s all;
+}
+
+@media (max-width: 767px) {
+  .portfolio__itemBtn ::before {
+    border: 3px solid transparent;
+    width: 100%;
+    max-width: 220px;
+    height: 60px;
+  }
+}
+.portfolio__itemBtn :hover::before {
+  background: linear-gradient(90deg, #8cfae6 0%, #ffc0cb 100%) border-box border-box;
 }
 
 /*******************************
