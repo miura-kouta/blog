@@ -8,26 +8,27 @@
   display: none;
 }
 
-.comments h3 {
-  height: 28px;
-  color: var.$ColorWhite1;
-  background: var.$ColorBlack1;
-  text-align: center;
-}
-
-.comment {
+.comments__menu {
   margin-top: 20px;
   background-color: var.$ColorWhite1;
   border-radius: 30px;
   overflow: hidden;
 }
 
-.comment:first-child {
-  margin-top: 0;
+.comments__headingLv3 {
+  height: 28px;
+  color: var.$ColorWhite1;
+  background: var.$ColorBlack1;
+  text-align: center;
 }
 
-.comment__content {
+.comments__content {
   padding: 20px;
+  border-bottom: 1px solid var.$ColorGray1;
+}
+
+.comments__list:last-child .comment__content {
+  border-bottom: 0;
 }
 
 .comment-respond {
@@ -53,30 +54,60 @@
   margin-top: 20px;
 }
 
-.comments__formTextarea {
-  padding: 4px;
-  margin-top: 20px;
-  border: solid 1px var.$ColorBlack1;
+.comments__formCommentText {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
 
+.comments__formCommentLabel {
+  font-weight: bold;
+}
+
+.comments__formTextarea {
+  margin-top: 4px;
+  padding: 4px;
+  border: solid 1px var.$ColorBlack1;
   max-width: 400px;
   width: 100%;
+}
+
+.comments__formNameText {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
 }
 
 .commentsNotesAfter {
   margin-top: 20px;
 }
 
+.comments__requiredText {
+  color: var.$ColorWhite1;
+  background-color: var.$ColorRed1;
+  padding: 2px 4px;
+  margin-left: 12px;
+}
+
 .comments__formNameInput {
-  width: 80%;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 4px;
   padding: 4px;
-  margin-top: 20px;
   border: solid 1px var.$ColorBlack1;
 }
 
+.comments__formEmailText {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
 .comments__formEmailInput {
-  width: 80%;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 4px;
   padding: 4px;
-  margin-top: 20px;
   border: solid 1px var.$ColorBlack1;
 }
 

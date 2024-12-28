@@ -54,6 +54,20 @@ ul {
   padding-right: 20px;
 }
 
+.u-contentFlex {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .u-contentFlex {
+    flex-direction: column-reverse;
+  }
+}
+
+.u-contentPaddingTop {
+  padding-top: 40px;
+}
+
 .u-contentGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
@@ -70,23 +84,9 @@ ul {
   overflow-wrap: break-word;
 }
 
-.u-contentPaddingTopBottom {
+.u-contentInner {
   padding-top: 40px;
   padding-bottom: 80px;
-}
-
-.u-contentPaddingTop {
-  padding-top: 40px;
-}
-
-.u-contentFlex {
-  display: flex;
-  justify-content: center;
-}
-@media screen and (max-width: 768px) {
-  .u-contentFlex {
-    flex-direction: column-reverse;
-  }
 }
 
 .u-headingLv1 {
@@ -325,26 +325,27 @@ ul {
   display: none;
 }
 
-.comments h3 {
-  height: 28px;
-  color: #ffffff;
-  background: #333333;
-  text-align: center;
-}
-
-.comment {
+.comments__menu {
   margin-top: 20px;
   background-color: #ffffff;
   border-radius: 30px;
   overflow: hidden;
 }
 
-.comment:first-child {
-  margin-top: 0;
+.comments__headingLv3 {
+  height: 28px;
+  color: #ffffff;
+  background: #333333;
+  text-align: center;
 }
 
-.comment__content {
+.comments__content {
   padding: 20px;
+  border-bottom: 1px solid #808080;
+}
+
+.comments__list:last-child .comment__content {
+  border-bottom: 0;
 }
 
 .comment-respond {
@@ -370,29 +371,60 @@ ul {
   margin-top: 20px;
 }
 
+.comments__formCommentText {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.comments__formCommentLabel {
+  font-weight: bold;
+}
+
 .comments__formTextarea {
+  margin-top: 4px;
   padding: 4px;
-  margin-top: 20px;
   border: solid 1px #333333;
   max-width: 400px;
   width: 100%;
+}
+
+.comments__formNameText {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
 }
 
 .commentsNotesAfter {
   margin-top: 20px;
 }
 
+.comments__requiredText {
+  color: #ffffff;
+  background-color: red;
+  padding: 2px 4px;
+  margin-left: 12px;
+}
+
 .comments__formNameInput {
-  width: 80%;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 4px;
   padding: 4px;
-  margin-top: 20px;
   border: solid 1px #333333;
 }
 
+.comments__formEmailText {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
 .comments__formEmailInput {
-  width: 80%;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 4px;
   padding: 4px;
-  margin-top: 20px;
   border: solid 1px #333333;
 }
 
