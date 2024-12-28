@@ -428,8 +428,8 @@ ul {
   border: solid 1px #333333;
 }
 
-.comments-form-cookies-consent {
-  margin-top: 20px;
+.comment-form-cookies-consent {
+  padding-top: 20px;
 }
 
 .form-submit {
@@ -669,6 +669,11 @@ ul {
 *******************************/
 .single {
   max-width: 680px;
+}
+@media screen and (max-width: 768px) {
+  .single {
+    padding-top: 40px;
+  }
 }
 
 .single__postWrap {

@@ -6,6 +6,9 @@
 
 .single {
   max-width: 680px;
+  @include var.mq(tab) {
+    padding-top: 40px;
+  }
 }
 
 .single__postWrap {
