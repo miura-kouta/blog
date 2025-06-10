@@ -1,4 +1,14 @@
 <aside class="sidebar">
+  <div class="sidebar__aboutBox">
+    <div class="sidebar__aboutImgWrap">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/about-image.webp" alt="自分の顔のイメージ" width="200" height="200" decoding="async">
+    </div>
+    <p class="sidebar__aboutNameText">三浦　浩太</p>
+    <p class="sidebar__aboutSentenceText">
+      フリーランスでWeb制作を行っています。HTML、CSS、JavaScriptを駆使しモダンで魅力的なサイト構築をお手伝いします。
+    </p>
+  </div>
+
   <?php  /*フィルターフック */ ?>
   <?php
   add_filter('wp_list_categories', function ($output) {

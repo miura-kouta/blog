@@ -48,9 +48,13 @@
   letter-spacing: 0.341em;
   color: var.$ColorBlack1;
   font-weight: bold;
-  font-family: var.$font-family1;
+  font-family: var.$font-family2;
   line-height: 1.75;
   text-align: center;
+
+  @include var.mq(tab) {
+    font-size: clamp(16px, 4.5vw, 50px);
+  }
 }
 
 .u-headingLv2 {

@@ -29,4 +29,9 @@
   background-color: var.$ColorBlue1;
   border-radius: 0px 11px 11px 0px / 0px 11px 11px 0px;
   cursor: pointer;
+  transition: 0.3s all;
+}
+
+.searchform__submitButton:hover {
+  background-color: var.$ColorBlue3;
 }

@@ -96,7 +96,7 @@
   right: 0;
   bottom: 0;
   border-radius: 45px;
-  border: 6px solid transparent;
+  // border: 6px solid transparent;
   background: var.$ColorBlack1 border-box border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0) border-box;
@@ -107,6 +107,8 @@
   width: 400px;
   height: 100px;
   transition: 0.6s all;
+
+  border: 2px solid transparent;
 }
 @media (max-width: 767px) {
   .portfolio__itemBtn ::before {

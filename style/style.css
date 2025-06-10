@@ -95,9 +95,14 @@ ul {
   letter-spacing: 0.341em;
   color: #333333;
   font-weight: bold;
-  font-family: Yu Gothic, Meiryo, MS PGothic, Noto Sans JP, sans-serif;
+  font-family: Helvetica, Yu Gothic, Meiryo, MS PGothic, Noto Sans JP, sans-serif;
   line-height: 1.75;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .u-headingLv1 {
+    font-size: clamp(16px, 4.5vw, 50px);
+  }
 }
 
 .u-headingLv2 {
@@ -132,6 +137,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ffffff;
+  background-color: #333333;
 }
 
 /*******************************
@@ -150,9 +157,24 @@ ul {
   }
 }
 
+.sidebar__aboutImgWrap img {
+  border-radius: 100%;
+}
+
+.sidebar__aboutNameText {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sidebar__aboutSentenceText {
+  padding-top: 20px;
+}
+
 .sideBar__categoryWrap {
   display: block;
   width: 200px;
+  padding-top: 20px;
 }
 @media screen and (max-width: 768px) {
   .sideBar__categoryWrap {
@@ -163,6 +185,8 @@ ul {
 .sideBar__categoryTitle {
   font-size: 2rem;
   font-weight: bold;
+  border-left: 5px solid #8cfae6;
+  padding-left: 8px;
 }
 
 .sideBar__categoryMenu {
@@ -193,6 +217,8 @@ ul {
 .sideBar__tagsTitle {
   font-size: 2rem;
   font-weight: bold;
+  border-left: 5px solid #e6adb7;
+  padding-left: 8px;
 }
 
 .wp-tag-cloud {
@@ -246,6 +272,11 @@ ul {
   background-color: #1a73e8;
   border-radius: 0px 11px 11px 0px/0px 11px 11px 0px;
   cursor: pointer;
+  transition: 0.3s all;
+}
+
+.searchform__submitButton:hover {
+  background-color: #66a3ff;
 }
 
 /*******************************
@@ -276,6 +307,7 @@ ul {
 
 .content__body {
   padding: 40px 20px;
+  word-wrap: break-word;
 }
 
 .content__postWrap {
@@ -476,7 +508,7 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .post {
-    margin-top: 40px;
+    padding-top: 20px;
   }
 }
 
@@ -638,7 +670,6 @@ ul {
   right: 0;
   bottom: 0;
   border-radius: 45px;
-  border: 6px solid transparent;
   background: #333333 border-box border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
   -webkit-mask-composite: destination-out;
@@ -647,6 +678,7 @@ ul {
   width: 400px;
   height: 100px;
   transition: 0.6s all;
+  border: 2px solid transparent;
 }
 
 @media (max-width: 767px) {
